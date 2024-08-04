@@ -38,7 +38,7 @@ export default function Page() {
     <div className="flex text-black items-center justify-center h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
         {user ? (
-          <div>
+          <div className="flex justify-center items-center flex-col gap-2">
             <h2 className="text-xl font-bold">Welcome, {user.username}</h2>
             <Button
               onClick={async () => {
